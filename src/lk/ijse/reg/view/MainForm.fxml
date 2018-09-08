@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="490.0" prefWidth="604.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.reg.controller.MainFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/reg/view/style/mainform.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="imgStudent" fitHeight="68.0" fitWidth="87.0" layoutX="80.0" layoutY="158.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Students_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCourse" fitHeight="68.0" fitWidth="87.0" layoutX="258.0" layoutY="158.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Book_Shelf_96px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgRegister" fitHeight="68.0" fitWidth="87.0" layoutX="433.0" layoutY="158.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_Registration_96px.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" ellipsisString="" graphicTextGap="8.0" layoutX="35.0" layoutY="24.0" lineSpacing="1.0" opacity="0.92" prefHeight="106.0" prefWidth="534.0" text="Institute Management System" textAlignment="CENTER" textFill="#180c96d4">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="30.0" />
+         </font>
+         <opaqueInsets>
+            <Insets bottom="4.0" left="6.0" right="3.0" top="2.0" />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="82.0" layoutY="357.0" prefHeight="30.0" prefWidth="440.0" text="Please select one of above main operations to proceed" textFill="#30a2cf">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="57.0" layoutY="262.0" prefHeight="68.0" prefWidth="476.0" text="Welcome" textFill="#0627df">
+         <font>
+            <Font name="MV Boli" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
